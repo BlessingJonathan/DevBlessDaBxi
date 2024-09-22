@@ -1,0 +1,116 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-image: url('/src/components/Assets/staionery-background.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+  }
+  
+
+  .container {
+    border: 5px solid aliceblue;
+    border-radius: 8px;
+    width: 600px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-bottom: 30px; 
+  }
+  
+
+  .text {
+    color: black;
+    font-size: 50px;
+    font-weight: 750;
+  }
+  
+ 
+  .underline {
+    width: 240px;
+    height: 5px;
+    background-color:black;
+    border-radius: 10px;
+  }
+  
+ 
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+  
+  
+  .input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 490px; /* Restrict input width */
+    height: 70px;
+    background-color: lightgray;
+    border-radius: 8px;
+    padding: 0 15px; 
+    margin-top: 20px;
+    font-size: 1.3rem;
+  }
+  
+  .input input {
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 1.3rem;
+    padding: 0 15px; /* Add padding inside the input */
+    border-radius: 8px;
+    border: 1px solid lightgray;
+  }
+  
+  .submit-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 30px; 
+  }
+  
+  
+  .submit button {
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto; 
+    height: 59px;
+    color: white;
+    background-color:aqua;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .submit button:hover {
+    color: aqua;
+    background-color: white;
+  }
+  

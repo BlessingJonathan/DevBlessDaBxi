@@ -1,0 +1,67 @@
+/* Ensure the container is block-level and falls under the navbar */
+.item-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Align items with space between them */
+    padding: 16px;
+    box-sizing: border-box;
+    margin-top: 80px; /* Adjust this based on your navbar height */
+    max-width: 100%; /* Ensure container does not exceed screen width */
+    overflow: hidden; /* Prevent overflow issues */
+  }
+  
+  /* Style for each image pair */
+  .item {
+    width:500px;
+    flex: 0 1 calc(50% - 16px); /* Each item takes up approximately 50% of the container width minus margin */
+    box-sizing: border-box;
+    margin-bottom: 16px; /* Space between rows */
+    display: flex;
+    justify-content: center;
+  }
+  .item p{
+    font-size: 30px;
+
+
+  }
+  /* Style for the image container */
+  .itemImage {
+    overflow: hidden;
+  }
+  
+  .itemImage img {
+    width: 100%; /* Ensure image fills the item container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+  }
+  
+  
+  
+  /* Media Queries for responsiveness */
+  
+  /* For screens smaller than 1200px (large desktops and tablets) */
+  @media (max-width: 1200px) {
+    .item {
+      flex: 0 1 45%; /* Adjust width to 45% for smaller screens */
+    }
+  }
+  
+  /* For screens smaller than 992px (tablets) */
+  @media (max-width: 992px) {
+    .item {
+      flex: 0 1 100%; /* Stack items on top of each other */
+    }
+  }
+  
+  /* For screens smaller than 768px (mobile devices) */
+  @media (max-width: 768px) {
+    .item {
+      flex: 0 1 100%; /* Ensure items stack vertically on small screens */
+    }
+  
+    .item-container {
+      padding: 8px; /* Reduce padding on smaller screens */
+      margin-top: 60px; /* Adjust top margin if necessary */
+    }
+  }
+  
